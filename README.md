@@ -108,6 +108,6 @@ Visit: http://localhost:3000
 
 ## 👤 Author
 
-**Tushar Mishra**
+**Tushar Mishra**\
 📧 tm3390782@gmail.com
 
