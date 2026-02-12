@@ -1,4 +1,4 @@
-# 🎮 ValoCoach - Professional Valorant Analytics Dashboard
+# 🎮 ValoCoach - Valorant Analytics Dashboard
 
 ValoCoach is a high-performance, dark-themed analytics dashboard
 designed for Valorant players to track their lifetime stats, map
@@ -108,6 +108,6 @@ Visit: http://localhost:3000
 
 ## 👤 Author
 
-**Tushar Mishra**\
+**Tushar Mishra**
 📧 tm3390782@gmail.com
 
