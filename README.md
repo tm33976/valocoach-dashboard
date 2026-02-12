@@ -1,4 +1,4 @@
-# 🎮 ValoCoach - Valorant Analytics Dashboard
+# 🎮 ValoCoach - Professional Valorant Analytics Dashboard
 
 ValoCoach is a high-performance, dark-themed analytics dashboard
 designed for Valorant players to track their lifetime stats, map
@@ -60,7 +60,40 @@ Average ACS
 
 
 
-------------------------------------------------------------------------
+---------------------------------------------
+
+
+
+
+## 🧠 Challenges & Solutions
+
+### 1. Synchronizing Complex Animations
+* **Challenge**: Coordinating the staggered entry of match cards while simultaneously handling the layout shifts from the search/filter logic.
+* **Solution**: Utilized Framer Motion's `AnimatePresence` with `mode='popLayout'`. This allows filtered cards to glide into their new positions smoothly rather than snapping, maintaining the premium feel.
+
+### 2. Spring-Physics Number Interpolation
+* **Challenge**: Creating a rolling counter that felt natural and didn't look like a standard linear ticker.
+* **Solution**: Implemented a custom `Counter` component using `useSpring` and `useMotionValue`. This allowed numbers to accelerate quickly and slow down with a `circOut` easing as they reached final values.
+
+### 3. Circular Progress Synchronization
+* **Challenge**: Calculating SVG `stroke-dashoffset` dynamically for radial bars based on varied agent win rates.
+* **Solution**: Built a mathematical utility using the formula $circumference - (winRate / 100) * circumference$ to precisely map data to circular paths.
+
+---
+
+## ⏱️ Time Spent on Task
+
+| Phase | Tasks | Time Spent |
+| :--- | :--- | :--- |
+| **Research & Setup** | Project setup and data structure planning. | 0.5 Hour |
+| **Core UI & Layout** | Obsidian theme, glassmorphism, responsive grids. | 1.5 Hours |
+| **Feature Implementation** | Search, filter logic, modal state, and map analytics. | 2.0 Hours |
+| **Motion & Animation** | Spring physics, staggered lists, scroll-based fillers. | 1.5 Hours |
+| **Polish & Deployment** | README, optimization, deployment, testing. | 0.75 Hour |
+| **Total** |  | **~6.25 Hours** |
+
+
+---
 
 ## ⚙️ Installation & Setup
 
@@ -108,6 +141,6 @@ Visit: http://localhost:3000
 
 ## 👤 Author
 
-**Tushar Mishra**\
+**Tushar Mishra**
 📧 tm3390782@gmail.com
 
